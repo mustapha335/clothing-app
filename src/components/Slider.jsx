@@ -43,34 +43,33 @@ const Wrapper = styled.div`
 const Slide = styled.div`
   width: 100vw;
   height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(${(props) => props.bgImg});
+  background-size: cover;
   display: flex;
   align-items: center;
-  background-color: #${(props) => props.bg};
-`;
-
-const ImgContainer = styled.div`
-  height: 100%;
-  flex: 1;
-`;
-
-const Image = styled.img`
-  height: 80%;
+  justify-content: center;
 `;
 
 const InfoContainer = styled.div`
-  flex: 1;
+  flex: flex;
   padding: 50px;
 `;
 
 const Title = styled.h1`
   font-size: 70px;
+  color: #${(props) => props.bg};
 `;
 
 const Desc = styled.p`
-  margin: 50px 0px;
-  font-size: 20px;
-  font-weight: 500;
+  margin: 44px 0px;
+  font-size: 21px;
+  font-weight: 600;
   letter-spacing: 3px;
+  color: #${(props) => props.color}; ;
 `;
 
 const Button = styled.button`
@@ -78,6 +77,12 @@ const Button = styled.button`
   font-size: 20px;
   background-color: transparent;
   cursor: pointer;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: rgb(0, 0, 0, 0.856);
+    color: white;
+  }
 `;
 
 const Slider = () => {
@@ -97,14 +102,11 @@ const Slider = () => {
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
         {sliderItems.map((item) => (
-          <Slide bg={item.bg} key={item.id}>
-            <ImgContainer>
-              <Image src={item.img} />
-            </ImgContainer>
+          <Slide bgImg={item.bgImg} key={item.id}>
             <InfoContainer>
-              <Title>{item.title}</Title>
-              <Desc>{item.desc}</Desc>
-              <Button>SHOW NOW</Button>
+              <Title bg={item.bg}>{item.title}</Title>
+              <Desc color={item.color}>{item.desc}</Desc>
+              <Button>SHOP NOW</Button>
             </InfoContainer>
           </Slide>
         ))}

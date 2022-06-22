@@ -1,5 +1,5 @@
 import "./App.css";
-import Cart from "./pages/Cart";
+// import Cart from "./pages/Cart";
 // import Product from "./pages/Product";
 // import Register from "./pages/Register";
 // import Login from "./pages/Login";
