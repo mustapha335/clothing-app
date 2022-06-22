@@ -43,10 +43,7 @@ const Wrapper = styled.div`
 const Slide = styled.div`
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
+  background: linear-gradient(rgb(28, 17, 21, 0.12), rgb(121, 98, 94, 0.13)),
     url(${(props) => props.bgImg});
   background-size: cover;
   display: flex;
@@ -61,7 +58,7 @@ const InfoContainer = styled.div`
 
 const Title = styled.h1`
   font-size: 70px;
-  color: #${(props) => props.bg};
+  color: rgb(255, 255, 255, 0.8);
 `;
 
 const Desc = styled.p`
@@ -69,19 +66,22 @@ const Desc = styled.p`
   font-size: 21px;
   font-weight: 600;
   letter-spacing: 3px;
-  color: #${(props) => props.color}; ;
+  color: white;
 `;
 
 const Button = styled.button`
   padding: 10px;
   font-size: 20px;
-  background-color: transparent;
+  background-color: rgba(121, 118, 118, 0.434);
   cursor: pointer;
   transition: all 0.5s ease;
+  border: 2px solid rgb(224, 222, 202, 0.8);
+  color: white;
 
   &:hover {
     background-color: rgb(0, 0, 0, 0.856);
     color: white;
+    border: 2px solid rgb(224, 222, 202, 0.8);
   }
 `;
 
@@ -104,8 +104,8 @@ const Slider = () => {
         {sliderItems.map((item) => (
           <Slide bgImg={item.bgImg} key={item.id}>
             <InfoContainer>
-              <Title bg={item.bg}>{item.title}</Title>
-              <Desc color={item.color}>{item.desc}</Desc>
+              <Title>{item.title}</Title>
+              <Desc>{item.desc}</Desc>
               <Button>SHOP NOW</Button>
             </InfoContainer>
           </Slide>

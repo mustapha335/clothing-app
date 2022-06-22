@@ -34,18 +34,18 @@ export const sliderItems = [
 export const categories = [
   {
     id: 1,
-    img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    img: "https://images.unsplash.com/photo-1609709295948-17d77cb2a69b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
     title: "SHIRT STYLE!",
   },
   {
     id: 2,
-    img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    img: "https://i.pinimg.com/564x/ef/ee/9d/efee9db3aedd3a2420f4ca784db87005.jpg",
     title: "LOUNGEWEAR LOVE",
   },
   {
     id: 3,
-    img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    title: "LIGHT JACKETS",
+    img: "https://images.unsplash.com/photo-1617064515669-db2063120a94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    title: "BOMBER JACKETS",
   },
 ];
 
@@ -56,11 +56,11 @@ export const popularProducts = [
   },
   {
     id: 2,
-    img: "https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
+    img: "https://o.remove.bg/downloads/d45ec3a8-3fd5-44fc-81c4-9d0dca2daa4b/back-side-black-t-shirt-back-side-11563174137zuevurjduy-removebg-preview.png",
   },
   {
     id: 3,
-    img: "https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png",
+    img: "https://o.remove.bg/downloads/ac5a7644-f5c2-4285-9f1a-6ae560f527c4/long-sleeved-t-shirt-dress-shirt-png-favpng-1d8tzFDMCEGQUGb6vQKyupfGF-removebg-preview.png",
   },
   {
     id: 4,
@@ -76,7 +76,7 @@ export const popularProducts = [
   },
   {
     id: 7,
-    img: "https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+    img: "https://o.remove.bg/downloads/1926763c-15e8-4239-9cb8-35310c7a8678/images-removebg-preview.png",
   },
   {
     id: 8,

@@ -15,7 +15,7 @@ const Info = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 1.4s ease;
+  transition: all 1.6s ease;
   cursor: pointer;
 `;
 
@@ -27,8 +27,9 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5fbfd;
+  background-color: rgba(176, 155, 113, 0.402);
   position: relative;
+  border-radius: 5px;
   &:hover ${Info} {
     opacity: 1;
   }
@@ -38,7 +39,7 @@ const Circle = styled.div`
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.797);
   position: absolute;
 `;
 

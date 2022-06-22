@@ -32,6 +32,13 @@ const TopButton = styled.button`
   background-color: ${(props) =>
     props.type === "filled" ? "black" : "transparent"};
   color: ${(props) => props.type === "filled" && "white"};
+  transition: all 1s ease;
+  &:hover {
+    background-color: rgb(0, 0, 0, 0.856);
+    color: white;
+    -webkit-box-shadow: 4px 6px 18px -7px rgba(0, 0, 0, 0.79);
+    box-shadow: 4px 6px 18px -7px rgba(0, 0, 0, 0.79);
+  }
 `;
 
 const TopTexts = styled.div`
@@ -149,6 +156,11 @@ const Button = styled.button`
   background-color: black;
   color: white;
   font-weight: 600;
+  transition: all 1s ease;
+  &:hover {
+    -webkit-box-shadow: 4px 6px 18px -7px rgba(0, 0, 0, 0.79);
+    box-shadow: 4px 6px 18px -7px rgba(0, 0, 0, 0.79);
+  }
 `;
 
 const Cart = () => {
